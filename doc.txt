@@ -1,0 +1,59 @@
+PROJECT TITLE : ARBITRARY PRECISION CALCULATOR
+
+NAME          : PATIL SAINATH MUKUNDRAO
+
+DATE          : 24 / 11 / 2025
+
+DESCRIPTION   : This project implements arithmetic operations on very large integers 
+                using a doubly linked list (Dlist) in C. 
+                Each digit of a number is stored in a node, allowing operations on numbers 
+                far beyond the limits of standard data types. 
+                The project supports addition, subtraction, multiplication, and division 
+                (using manual long-division by repeated subtraction),along with sign handling, 
+                magnitude comparison, and formatted vertical display of operations.
+
+SAMPLE I/O    :
+
+                Example 1: Addition
+                Input : 9999 + 1
+                Output:
+                9999
+                +   1
+                -----
+                10000
+
+                Example 2: Subtraction
+                Input : 5000 - 4999
+                Output:
+                5000
+                -4999
+                -----
+                    1
+
+                Example 3: Multiplication
+                Input : 123 x 45
+                Output:
+                123
+                x  45
+                -----
+                5535
+
+                Example 4: Division
+                Input : 15789 / 57
+                Output:
+                Quotient  = 277
+                Remainder = 0
+                (Method uses repeated subtraction like manual long division.)
+
+CONCEPT USED  :
+                • Doubly linked list to store digits.
+                • Dynamic memory allocation (malloc/free).
+                • String parsing and input validation.
+                • Digit-wise addition with carry.
+                • Digit-wise subtraction with borrow.
+                • Grade-school multiplication method.
+                • Long-division method (bring-down + repeated subtraction).
+                • Magnitude comparison algorithms.
+                • Handling of + / - signs.
+                • Leading zero removal.
+                • Formatted vertical display of arithmetic operations.
